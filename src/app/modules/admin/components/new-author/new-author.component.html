@@ -1,0 +1,16 @@
+<app-error-message [error]="errorMessage"></app-error-message>
+
+<form [formGroup]="form" (ngSubmit)="handleSubmit()">
+  <div class="field">
+    <label for="firstName">Firstname</label>
+    <input id="firstName" formControlName="firstName" />
+    <app-form-errors [field]="firstName" [show]="submitted"></app-form-errors>
+  </div>
+  <div class="field">
+    <label for="lastName">Lastname</label>
+    <input id="lastName" formControlName="lastName" />
+    <app-form-errors [field]="lastName" [show]="submitted"></app-form-errors>
+  </div>
+  <button type="submit" [disabled]="submitted && form.invalid">Save</button>
+  <button type="button" routerLink="..">Cancel</button>
+</form>

@@ -1,0 +1,88 @@
+@import "styles/constants";
+
+html, body {
+  margin: 0;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.menu {
+  display: inline;
+  font-weight: normal;
+
+  > a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
+
+form {
+  padding: 2rem;
+
+  .field {
+    margin-bottom: 1rem;
+    display: block;
+
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+
+    input, select, textarea {
+      box-sizing: border-box;
+      border-style: solid;
+      border-color: #ccc;
+      border-width: 1px;
+      border-radius: 4px;
+      padding: 0.5rem;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  }
+
+  button:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+}
+
+button, .btn {
+  padding: 0.5rem 1rem;
+  background-color: $primary-bg-color;
+  color: $primary-fg-color;
+  border-style: solid;
+  border-color: $primary-bg-color;
+  border-radius: $border-radius;
+  transition: background-color 0.5s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    background-color: darken($primary-bg-color, 10%);
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+
+  &.outlined {
+    background-color: white;
+    color: $default-fg-color;
+
+    &:hover {
+      background-color: lighten($primary-bg-color, 30%);
+    }
+  }
+}

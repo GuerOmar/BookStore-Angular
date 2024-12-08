@@ -1,0 +1,13 @@
+.book {
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #efefef;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .author {
+    display: inline-block;
+  }
+}

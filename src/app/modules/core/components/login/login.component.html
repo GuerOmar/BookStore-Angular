@@ -1,0 +1,17 @@
+<app-error-message [error]="errorMessage"></app-error-message>
+
+<form [formGroup]="form" (ngSubmit)="handleSubmit()">
+  <div class="field">
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" />
+    <app-form-errors [field]="email" [show]="submitted"></app-form-errors>
+  </div>
+  <div class="field">
+    <label for="password">Password</label>
+    <input id="password" type="password" formControlName="password" />
+    <app-form-errors [field]="password" [show]="submitted"></app-form-errors>
+  </div>
+  <button type="submit" [disabled]="submitted && form.invalid">
+    Connect
+  </button>
+</form>

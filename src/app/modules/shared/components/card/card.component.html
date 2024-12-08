@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="header">
+    <div class="title">
+      <ng-content select="[title]"></ng-content>
+    </div>
+    <div class="sub-title">
+      <ng-content select="[subtitle]"></ng-content>
+    </div>
+  </div>
+  <div class="content">
+    <ng-content select="[content]"></ng-content>
+  </div>
+  <div class="footer">
+    <ng-content select="[footer]"></ng-content>
+  </div>
+</div>

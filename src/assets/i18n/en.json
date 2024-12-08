@@ -1,0 +1,11 @@
+{
+  "NAVBAR": {
+    "HELLO": "Hello, {{title}}!",
+    "BOOKS": "Books",
+    "ADMIN": "Admin",
+    "LOGOUT": "Logout"
+  },
+  "ERRORS": {
+    "LOGIN": "Invalid email or password!"
+  }
+}

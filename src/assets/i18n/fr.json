@@ -1,0 +1,11 @@
+{
+  "NAVBAR": {
+    "HELLO": "Bonjour, {{title}}!",
+    "BOOKS": "Livres",
+    "ADMIN": "Administration",
+    "LOGOUT": "Déconnexion"
+  },
+  "ERRORS": {
+    "LOGIN": "Email ou mot de passe invalides !"
+  }
+}

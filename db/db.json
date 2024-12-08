@@ -1,0 +1,47 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Clean Architecture",
+      "author": "MARTIN Robert C.",
+      "resume": "Building upon the success of best-sellers The Clean Coder and Clean Code, legendary software craftsman Robert C. \"Uncle Bob\" Martin shows how to bring greater professionalism and discipline to application architecture and design."
+    },
+    {
+      "id": 2,
+      "title": "Clean Code",
+      "author": "MARTIN Robert C.",
+      "resume": "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t have to be that way. Noted software expert Robert C. Martin presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship."
+    },
+    {
+      "title": "Ravages",
+      "author": "BARJAVEL René",
+      "resume": "ezrgzergzerg",
+      "id": 3
+    },
+    {
+      "title": "Les Misérables",
+      "author": "HUGO Victor",
+      "resume": "zefzefez",
+      "id": 4
+    }
+  ],
+  "authors": [
+    {
+      "firstName": "Victor",
+      "lastName": "HUGO",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "toto@toto.fr",
+      "password": "toto"
+    },
+    {
+      "id": 2,
+      "email": "tutu@tutu.fr",
+      "password": "tutu"
+    }
+  ]
+}

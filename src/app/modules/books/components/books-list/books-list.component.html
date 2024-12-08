@@ -1,0 +1,9 @@
+<div class="books-list">
+  <app-error-message [error]="errorMessage"></app-error-message>
+  <a *ngFor="let b of books" [routerLink]="['/books', b.id]">
+    <app-books-list-item
+      [book]="b"
+      (authorClicked)="handleAuthorClicked($event)"
+    />
+  </a>
+</div>

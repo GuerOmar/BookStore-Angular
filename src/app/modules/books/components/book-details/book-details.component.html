@@ -1,0 +1,16 @@
+<app-error-message [error]="errorMessage"></app-error-message>
+
+<app-card *ngIf="book">
+  <div title data-testid="title">
+    {{book.title}}
+  </div>
+  <div subtitle data-testid="author">
+    {{book.author}}
+  </div>
+  <div content data-testid="resume">
+    {{book.resume}}
+  </div>
+  <a footer class="btn" routerLink="/">
+    Back
+  </a>
+</app-card>

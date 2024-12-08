@@ -1,0 +1,21 @@
+<app-error-message [error]="errorMessage"></app-error-message>
+
+<form #form="ngForm" (ngSubmit)="handleSubmit(!!form.valid)">
+  <div class="field">
+    <label for="title">Book title</label>
+    <input id="title" name="title" [(ngModel)]="book.title" #title="ngModel" required minlength="4" />
+    <app-form-errors [field]="title" [show]="submitted"></app-form-errors>
+  </div>
+  <div class="field">
+    <label for="author">Author name</label>
+    <input id="author" name="author" [(ngModel)]="book.author" #author="ngModel" required minlength="4" />
+    <app-form-errors [field]="author" [show]="submitted"></app-form-errors>
+  </div>
+  <div class="field">
+    <label for="resume">Description</label>
+    <textarea id="resume" name="resume" [(ngModel)]="book.resume" #resume="ngModel" minlength="10" ></textarea>
+    <app-form-errors [field]="resume" [show]="submitted"></app-form-errors>
+  </div>
+  <button type="submit" [disabled]="submitted && form.invalid">Save</button>
+  <button type="button" routerLink="..">Cancel</button>
+</form>

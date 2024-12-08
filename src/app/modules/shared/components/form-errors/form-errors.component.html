@@ -1,0 +1,11 @@
+<div *ngIf="show && field.errors" class="error">
+  <div *ngIf="field.errors['required']">
+    This field is required
+  </div>
+  <div *ngIf="field.errors['minlength']">
+    This field must at least {{field.errors['minlength'].requiredLength }} characters long
+  </div>
+  <div *ngIf="field.errors['email']">
+    Invalid email address format
+  </div>
+</div>

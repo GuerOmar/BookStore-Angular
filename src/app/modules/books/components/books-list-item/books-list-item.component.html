@@ -1,0 +1,8 @@
+<div *ngIf="book" appShadow class="book">
+  <div class="title" data-testid="title">
+    {{book.title}}
+  </div>
+  <div class="author" data-testid="author" (click)="handleClick($event)">
+    {{book.author}}
+  </div>
+</div>

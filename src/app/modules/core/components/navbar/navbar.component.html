@@ -1,0 +1,17 @@
+<nav>
+  <span data-testid="title">
+    {{ 'NAVBAR.HELLO' | translate:{ title } }}
+  </span>
+  <div class="menu">
+    <a routerLink="/books" routerLinkActive="active">
+      {{ 'NAVBAR.BOOKS' | translate }}
+    </a>
+    <a routerLink="/admin" routerLinkActive="active">
+      {{ 'NAVBAR.ADMIN' | translate }}
+    </a>
+    <button *ngIf="isConnected" class="btn" (click)="handleDisconnect()" data-testid="logout">
+      {{ 'NAVBAR.LOGOUT' | translate }}
+    </button>
+  </div>
+  <app-lang-selector></app-lang-selector>
+</nav>
