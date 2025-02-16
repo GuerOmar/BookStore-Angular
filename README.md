@@ -6,16 +6,23 @@ The application represents a bookstore where users can browse and find books. It
 
 ## How to Test the Application  
 
-To simulate a backend server, I added the `json-server` dependency. To test the application, follow these steps:  
+To simulate a backend server, I added the `json-server` dependency. To test the application locally, run the following commands:  
 
-1. Run the frontend application:  
+1. Install the dependencies:
+   ```sh
+   npm install
+   ```
+
+2. Run the frontend application:  
 
    ```sh
    npm start
    ```
 
-2. In another terminal, start the mock backend server:
+3. In another terminal, start the mock backend server:
 
    ```sh
    npm run server
    ```
+
+Once both are running, open `http://localhost:4200` in your browser to explore the bookstore and its features.
